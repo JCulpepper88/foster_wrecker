@@ -77,7 +77,7 @@ border: 0;
 	z-index: 1; /*Stay on top*/
 	top: 0; /*Stay at top */
 	left: 0;
-	background-color: lightgray;
+	background-color: firebrick;
     overflow-x: hidden; /*Disable horizontal scroll*/
     margin-left: 0px;
 }
@@ -109,10 +109,16 @@ div.center {
 .lightbold {
     font-weight: 300;
 }
+.medium {
+	font-size: 18px;
+}
 .large {
     font-size: 25px;
 }
 .xlarge {
+	font-size: 45px;
+}
+.xxlarge {
     font-size: 90px;
 }
 div {
@@ -128,12 +134,12 @@ img {
 }
 /* link color */
 a{
-	color: blue;
+	color: white;
 	position: relative;
 }
 /* mouse over link */
 a:hover{
-	color:darkblue;
+	color:lightblue;
 }
 a:link{
 	text-decoration: none;

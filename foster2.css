@@ -1,0 +1,149 @@
+body {
+    background-image: url(metal.jpg);
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color:lightgray;
+	background-attachment: fixed;
+	margin-right: 13%;
+	margin-left: 13%;
+}
+/*Navigation menu links*/
+.sidenav a {
+	text-decoration: none;
+	font-size: 27px;
+	display: block;
+	font-weight: none;
+}
+
+.menubutton {
+font-size: 30px;
+z-index: 10;
+background-color: transparent;
+border: 0;
+}
+
+
+/*Dealing with smaller screens*/
+@media screen and (max-width: 700px) {
+  .sidenav {
+	display: none;
+	position: relative;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+	background-color: gray;
+	
+  }
+  body {
+	  margin-left: 5%;
+	  margin-right: 5%;
+  }
+  
+
+  .closebtncontainer {
+    display: block;
+  }
+  .closebtn {
+	  position:fixed;
+	  top: 15px;
+	  right: 15px;
+	  font-size: 40px;
+	  color: white;
+	  background-color: blue;
+	  border: 0px;
+  }
+ 
+
+}
+
+/*Dealing with larger screens*/
+@media only screen and (min-width: 701px) {
+	.menubuttoncontainer {
+		display: none;
+	}
+	.closebtncontainer {
+		display: none;
+	}
+	/*Sidebar Menu*/
+.sidenav {
+	height: 100%;
+	width: 200px;
+	position: fixed; /*Stay in place on scroll*/
+	z-index: 1; /*Stay on top*/
+	top: 0; /*Stay at top */
+	left: 0;
+	background-color: lightgray;
+    overflow-x: hidden; /*Disable horizontal scroll*/
+    margin-left: 0px;
+}
+.center {
+    text-align: center;
+}
+div.center {
+    width: 80%;
+
+}
+.red {
+    color: red;
+}
+.orange {
+    color: orange;
+}
+.green {
+    color: green;
+}
+.blue {
+    color: blue;
+}
+.brown {
+    color: brown;
+}
+.bold {
+    font-weight: 600;
+}
+.lightbold {
+    font-weight: 300;
+}
+.large {
+    font-size: 25px;
+}
+.xlarge {
+    font-size: 90px;
+}
+div {
+    
+    width: 1100px;
+    background-color: transparent;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+img {
+    float: right;
+}
+/* link color */
+a{
+	color: blue;
+	position: relative;
+}
+/* mouse over link */
+a:hover{
+	color:darkblue;
+}
+a:link{
+	text-decoration: none;
+}
+a:active{
+    top:2px;
+}
+
+ul.centered {
+	text-align: center;
+	list-style-type: none;
+	padding-left: 0;
+}

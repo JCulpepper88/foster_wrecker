@@ -1,19 +1,26 @@
 body {
     background-image: url(metal.jpg);
-    height: 100%;
+	margin: 0;
+	
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 	background-color:lightgray;
 	background-attachment: fixed;
-	margin-right: 0;
-	margin-left: 0;
 }
-main {
-	margin-right: 20%;
-	margin-left: 20%;
+.flex-container {
+	display: flex;
+	justify-content: center;
 }
+.wrap {
+	flex-wrap: wrap;
+}
+.header {
+	text-align: center;
+	color: firebrick;
+}
+
 /*Navigation menu links*/
 .sidenav a {
 	text-decoration: none;
@@ -24,7 +31,6 @@ main {
 
 .menubutton {
 font-size: 30px;
-z-index: 10;
 background-color: transparent;
 border: 0;
 }
@@ -32,66 +38,79 @@ border: 0;
 
 /*Dealing with smaller screens*/
 @media only screen and (max-width: 700px) {
-  .sidenav {
+	.main {
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	.sidenav {
 	display: none;
-	position: relative;
-    z-index: 1;
+	position: absolute;
     width: 100%;
-    top: 0;
-    left: 0;
     margin: 0;
 	background-color: gray;
 }
-  body {
-	  margin-left: 5%;
-	  margin-right: 5%;
+  .footer {
+	  width: 100%;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  margin: 0;
+	  text-align: center;
+	  color: white;
+	  background-color: black;
   }
   
-  .closebtncontainer {
-    display: block;
+  ul.centered {
+	  text-align: center;
+	  list-style-type: none;
+	  padding-left: 0;
   }
-  .closebtn {
-	  position:fixed;
-	  top: 15px;
-	  right: 15px;
-	  font-size: 40px;
-	  color: white;
-	  background-color: blue;
-	  border: 0px;
-  }
-  div {
-	  width: 90%;
+  li.nav {
+	  padding: 0px;
+	  width: 100px;
   }
 }
 
+
 /*Dealing with larger screens*/
 @media only screen and (min-width: 701px) {
+	.main {
+		margin-right: 15%;
+		margin-left: 15%;
+	}
 	.menubuttoncontainer {
 		display: none;
 	}
-	.closebtncontainer {
-		display: none;
-	}
+	
 	/*Sidebar Menu*/
-.sidenav {
-	height: 100%;
-	width: 200px;
-	position: fixed; /*Stay in place on scroll*/
-	z-index: 1; /*Stay on top*/
-	top: 0; /*Stay at top */
-	left: 0;
-	background-color: firebrick;
-    overflow-x: hidden; /*Disable horizontal scroll*/
-    margin-left: 0px;
-}
+	.sidenav {
+		height: 100%;
+		background-color: firebrick;
+	}
+	.footer {
+		width: 100%;
+		padding: 1rem;
+		margin: 0;
+		text-align: center;
+		color: white;
+		background-color: black;
+		position: absolute;
+		bottom: 0;
+	}
+	ul.centered {
+		text-align: center;
+		list-style-type: none;
+		padding-left: 0;
+	}
+	li.nav {
+		padding: 0px;
+		width: 200px;
+	}
 }
 .center {
     text-align: center;
 }
-div.center {
-    width: 80%;
 
-}
 .red {
     color: red;
 }
@@ -134,22 +153,16 @@ p.big {
 p.background {
 	background-color: black;
 }
-div {
-    
-    width: 1100px;
-    background-color: transparent;
-    position: relative;
-    margin-left: 10px;
-    margin-right: 10px;
-}
+
 img {
-    float: right;
+    margin: 10px;
 }
+
 /* link color */
 a{
 	color: white;
-	position: relative;
 }
+
 /* mouse over link */
 a:hover{
 	color:lightblue;
@@ -159,32 +172,4 @@ a:link{
 }
 a:active{
     top:2px;
-}
-
-ul.centered {
-	text-align: center;
-	list-style-type: none;
-	padding-left: 0;
-}
-.header {
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	padding: 1rem;
-	text-align: center;
-	color: white;
-	background-color: black;
-	width: 100%;
-}
-.footer {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	padding: 1rem;
-	text-align: center;
-	color: white;
-	background-color: black;
-	width: 100%;
 }

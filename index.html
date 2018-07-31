@@ -20,7 +20,9 @@
 <div class="menubuttoncontainer">
         <button class="menubutton" onclick="toggleNavbar();">&#9776;</button>
         </div>
-    <div class="sidenav" id="navbar">
+    <div class="flex-container">
+
+        <div class="sidenav" id="navbar">
         <ul class="centered">
         <li><a href="index.html">Home</a>
         <hr/>
@@ -36,10 +38,15 @@
         <hr/>
         </ul>
         </div>
+
+    <div class="main">
     <p class="center firebrick bold xxlarge">Foster Wrecker Service <br> (205) 854-4646</p>
-    <div style="margin: 0px 0px 0px 180px"; class="large center">
-         <img src="truck1.jpg"; style="margin: 0px 0px 0px 50px"; border="1px"/> 
-        <p class="bold">We are available 24/7 for roadside assistance and light or medium 
+
+   <div class="flex-container wrap">
+
+    
+         <div>
+        <p class="bold large center">We are available 24/7 for roadside assistance and light or medium 
         duty towing. Foster Wrecker Service provides towing, roadside 
         assistance, and wrecker services for Birmingham, Trussville, Center 
         Point, and surrounding areas. We have professional employees and 
@@ -47,16 +54,23 @@
         Service operates towing services local and long distance. See our 
         <a href="services.html" class="blue">services page</a> for a complete list of all we can do for you!
         </p>
-    </div>
-    &emsp;
-    <div style="margin: 0px 0px 0px 180px"; class ="large center">
-        <img src="truck_with_coup.jpg"; style="margin: 0px 0px 0px 50px"; border="1px"/>
+            
         <p class="xlarge firebrick bold center">
-           <br> "We're always on our tows!"
+            "We're always on our tows!"
         </p>
+        </div>
+    <div>
+        <img src="truck1.jpg"; border="1px"/> &emsp;
+        <img src="truck_with_coup.jpg"; border="1px"/> &emsp;
+        <img src="towing_nice_car.jpg"; width="300px"; border="1px"/>
     </div>
-</body>
+
+</div> <!--End flex-container-->
+</div> <!--End main-->
+</div> <!--End flex-container-->
+
 <div class="footer">
         Copyright © 2014 Foster Wrecker Service LLC
 </div>
+</body>
 </html>

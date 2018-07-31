@@ -55,6 +55,9 @@ border: 0;
 	  background-color: blue;
 	  border: 0px;
   }
+  div {
+	  width: 90%;
+  }
 }
 
 /*Dealing with larger screens*/

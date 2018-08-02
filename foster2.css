@@ -29,6 +29,12 @@ body {
 	font-weight: none;
 }
 
+div.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
 .menubutton {
 font-size: 30px;
 background-color: transparent;
@@ -86,6 +92,7 @@ border: 0;
 	.sidenav {
 		height: 100%;
 		background-color: firebrick;
+
 	}
 	.footer {
 		width: 100%;
@@ -94,7 +101,6 @@ border: 0;
 		text-align: center;
 		color: white;
 		background-color: black;
-		position: absolute;
 		bottom: 0;
 	}
 	ul.centered {
@@ -111,6 +117,9 @@ border: 0;
     text-align: center;
 }
 
+.white {
+	color: white;
+}
 .red {
     color: red;
 }
@@ -147,8 +156,8 @@ border: 0;
 .xxlarge {
     font-size: 65px;
 }
-p.big {
-	line-height: 1.8;
+.bigline {
+	line-height: 1.4;
 }
 p.background {
 	background-color: black;

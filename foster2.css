@@ -143,6 +143,9 @@ border: 0;
 	text-align: justify;
 }
 
+
+/*Colors*/
+
 .white {
 	color: white;
 }
@@ -164,24 +167,35 @@ border: 0;
 .brown {
     color: brown;
 }
+
+/*bold*/
+
 .bold {
     font-weight: 600;
 }
 .lightbold {
     font-weight: 300;
 }
+
+/*font size*/
+
+.phonenumber {
+	font-size: 27px;
+}
 .medium {
 	font-size: 18px;
 }
 .large {
-    font-size: 1.3vw;
+    font-size: 1.8vw;
 }
 .xlarge {
-	font-size: 2.35vw;
+	font-size: 2.7vw;
 }
 .xxlarge {
-    font-size: 3.4vw;
+    font-size: 3.8vw;
 }
+
+
 .bigline {
 	line-height: 1.4;
 }

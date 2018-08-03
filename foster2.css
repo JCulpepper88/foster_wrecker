@@ -84,11 +84,11 @@ border: 0;
 	font-size: 4.7vw;
 }
 .xxlarge {
-    font-size: 5.8vw;
+    font-size: 6.8vw;
+}
 }
 
-}
-
+/*End Small Screens*/
 
 
 /*Dealing with larger screens*/

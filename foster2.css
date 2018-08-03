@@ -174,13 +174,13 @@ border: 0;
 	font-size: 18px;
 }
 .large {
-    font-size: 25px;
+    font-size: 1.3vw;
 }
 .xlarge {
-	font-size: 45px;
+	font-size: 2.35vw;
 }
 .xxlarge {
-    font-size: 65px;
+    font-size: 3.4vw;
 }
 .bigline {
 	line-height: 1.4;

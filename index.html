@@ -16,6 +16,16 @@
 <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+        
+    <!--Load Facebook SDK for JavaScript-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+         fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Side Navigation -->
 
@@ -58,13 +68,30 @@
         Service operates towing services local and long distance. See our 
         <a href="services.html" class="blue"><strong>services page</strong></a> for a complete list of all we can do for you!
         </p>
-            
+
         <p class="xlarge firebrick bold center">
-            "We're always on our tows!"
-        </p>
-        <p>
+                "We're always on our tows!"
+        </p>    
             
-        </p>
+            <!--Facebook like button code-->
+        <div class="fb-like" 
+        data-href="https://www.facebook.com/Fosterwreckerservice/" 
+        data-layout="standard" 
+        data-action="like" 
+        data-size="small" 
+        data-show-faces="false" 
+        data-share="false">
+        </div>
+
+        <div style="text-align: center">
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FFosterwreckerservice%2F&width=450&layout=standard&action=like&size=small&show_faces=false&share=false&height=35&appId" 
+        width="230" height="35" style="border:none;overflow:hidden" 
+        scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
+        </iframe>
+        </div>
+
+    
+        
         </div>
     <div>
         <img src="truck1.jpg"; border="1px"/> &emsp;

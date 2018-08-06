@@ -35,6 +35,7 @@ body {
 font-size: 30px;
 background-color: transparent;
 border: 0;
+left: 0;
 }
 
 
@@ -46,7 +47,6 @@ border: 0;
 	}
 
 	
-
 	.sidenav {
 	display: none;
 	position: absolute;
@@ -78,13 +78,13 @@ border: 0;
 	font-size: 1.3vw;
 }
 .large {
-    font-size: 2.8vw;
+    font-size: 3.7vw;
 }
 .xlarge {
-	font-size: 4.7vw;
+	font-size: 6.7vw;
 }
 .xxlarge {
-    font-size: 8.8vw;
+    font-size: 8.9vw;
 }
 }
 

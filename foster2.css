@@ -11,7 +11,7 @@ body {
 }
 .flex-container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 }
 .wrap {
 	flex-wrap: wrap;
@@ -19,6 +19,9 @@ body {
 .header {
 	text-align: center;
 	color: firebrick;
+}
+.cars {
+	margin-bottom: 50px;
 }
 
 /*Navigation menu links*/
@@ -74,6 +77,9 @@ left: 0;
 	  width: 100%;
   }
 
+.small {
+	font-size: 2.8vw;
+}
 .medium {
 	font-size: 1.3vw;
 }
@@ -141,6 +147,9 @@ left: 0;
 		width: 200px;
 	}
 
+.small {
+	font-size: 1.2vw;
+}
 .medium {
 	font-size: 1.3vw;
 }
@@ -178,6 +187,9 @@ left: 0;
 
 .white {
 	color: white;
+}
+.black {
+	color: black;
 }
 .red {
     color: red;
